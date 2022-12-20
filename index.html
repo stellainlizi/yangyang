@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>羊羊de衣</title>
+		<style>
+			*,body{
+				padding: 0;
+				margin: 0;
+				
+			}
+			.main{
+			
+			display:flex;
+			flex-direction: column;
+			min-width: 640px;
+			background-image: url(img/微信图片_20221102145316.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: auto;
+			top: 0;
+		z-index: 0;
+			
+			flex-wrap: wrap;
+			
+			}
+			.yun{
+			position: absolute;
+			top:2%;
+			left:-45%;
+			z-index: 1;	
+			}
+			
+			.biaotipai{
+			
+			position: relative;
+	        margin: 0 auto;
+			z-index: 2;
+			left: 20%;
+			
+			animation: mymove 3s ;}
+			@keyframes mymove{
+				from{top:-150px;}
+				to{top:0px};
+				}
+			.picrotation{
+				position: absolute;
+		        left: -150%;
+		        top:70%;
+				border-radius: 50%;
+				z-index: 2;
+				animation: picrotation 5s ease-out 0s 1;
+			}
+			@keyframes picrotation{
+				from{transform: rotate(0deg);
+
+}
+				to{transform: rotate(360deg);
+				}
+			}
+		 .picrotation:active{
+				animation-play-state: paused;
+			}
+		</style>
+	</head>
+	<body>
+	
+	<img src="img/微信图片_20221102145316.jpg" class="main">
+   <img class="biaotipai" src="img/标题牌.png" width="120%" ></div>
+   <img src="img/云.png\" class="yun" width="250%"> </div>
+    <a href="http://www.baidu.com"target="_parent"><img class="picrotation" width="450%" src="img/可转星球.png"></div></a>
+    
+   
+	</body>
+</html>
